@@ -83,23 +83,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -7.5rem;
 }
 .hero {
     display: flex;
-    width: 21.875rem;
+    width: 21rem;
     background-color: white;
     flex-direction: column;
     border-radius: 25px;
 }
+.img-top {
+    border-radius: 25px 25px 0px 0px;
+}
 .content{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    grid-gap: 1rem;
+    padding: 2rem;
+    
 }
 .center{
     display: flex;
     grid-gap: 2rem;
+    align-items: center;
+    
 }
 .attribution {
     position: absolute;
