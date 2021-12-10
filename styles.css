@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display");
 /*RESET CSS Start*/
+
 /* Box sizing rules */
 *,
 *::before,
@@ -74,44 +76,81 @@ select {
   }
 }
 /*RESET CSS End*/
-
 body {
-    background-color: hsl(225, 100%, 94%);  
+  background-color: hsl(225, 100%, 94%);
+  font-family: Red Hat Display;
+  font-size: 16px;
     
 }
+.content p {
+  color:  hsl(224, 23%, 55%);
+}
+h2 {
+  font-weight: 900;
+  padding-top: 1.5rem;
+}
+.pmain {
+  text-align: center;
+  font-weight: 500;
+  width: 16rem;
+}
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   margin-top: -7.5rem;
 }
 .hero {
-    display: flex;
-    width: 21rem;
-    background-color: white;
-    flex-direction: column;
-    border-radius: 25px;
+  display: flex;
+  width: 21rem;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 25px;
 }
 .img-top {
-    border-radius: 25px 25px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
 }
 .content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    grid-gap: 1rem;
-    padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-gap: 1rem;
     
 }
 .center{
-    display: flex;
-    grid-gap: 2rem;
-    align-items: center;
-    
+  display: flex;
+  grid-gap: 2rem;
+  align-items: center;
+  background-color:hsl(225, 100%, 98%);
+  padding: 1.5rem;
+  border-radius: 10px;
 }
-.attribution {
-    position: absolute;
-    bottom: 0;
-    margin-left: 4rem;
-    
+.pay {
+  display: flex;
+  background-color:hsl(245, 75%, 52%);
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px;
+}
+.paylink {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+}
+.cancel {
+  padding-bottom: 2rem;
+  color:   hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+@media (min-width: 390px) {
+  .container{
+    margin-top: auto;
+  }
+  .img-background-mobile{
+    display: none;
+  }
 }
